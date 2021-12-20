@@ -1,0 +1,6 @@
+title SPA New Note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note right of server: POST Request Received with JSON
+server->browser: Status Code 201 Created
+note left of browser: no further HTML request
