@@ -11,15 +11,14 @@ const Button = ({handleClick, text}) => (
 
 const App = () => {
   const [counter, setCounter] = useState(0)
-
   const increaseByOne = () => setCounter(counter + 1)
   const decreaseByOne = () => setCounter(counter - 1)
   const setToZero = () => setCounter(0)
 
-  setTimeout(
-    () => setCounter(counter + 1),
-    1000
-  )
+  // setTimeout(
+  //   () => setCounter(counter + 1),
+  //   1000
+  // )
   console.log('rendering...', counter)
 
   return (
