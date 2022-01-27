@@ -4,6 +4,8 @@ const Display = ({text}) => <h1>{text}</h1>
 
 const Button = ({text, handleClick}) => <button onClick={handleClick}> {text} </button>
 
+
+
 const AllStats = ({allClicks, good, bad, neutral}) => {
   if(allClicks.length === 0){
     return (<p>No feedback given</p>)
@@ -41,8 +43,8 @@ const Stat = ({text, stat}) => {
 }
 
 const App = () => {
-  // tallenna napit omaan tilaansa
-  const [good, setGood] = useState(0)
+  // save the buttons to their own state
+  const [good, setGood] = useState(0) //initializing the good neutral and bad states to 0
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
   const [allClicks, setAll] = useState([])
